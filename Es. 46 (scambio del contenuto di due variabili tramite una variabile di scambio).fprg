@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-04 01:26:02 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjQtMDEtMDM7IjEwOjU2OjIxICI7MjU5MQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjQtMDEtMDQ7IjAxOjI2OjAyICI7MzM7Mjc0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, variabilediscambio" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci 2 elementi (numeri) di cui si scambiaranno reciprocamente il loro valore (un numero a messaggio)&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <assign variable="variabilediscambio" expression="a"/>
+                    <assign variable="a" expression="b"/>
+                    <assign variable="b" expression="variabilediscambio"/>
+                </then>
+                <else>
+                    <assign variable="variabilediscambio" expression="b"/>
+                    <assign variable="b" expression="a"/>
+                    <assign variable="a" expression="variabilediscambio"/>
+                </else>
+            </if>
+            <output expression="&quot;I valori dei 2 numeri inseriti scambiati reciprocamente sono:&quot;" newline="True"/>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

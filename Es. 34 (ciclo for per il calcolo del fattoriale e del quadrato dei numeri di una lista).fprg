@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zkpow"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-03 01:11:43 "/>
+        <attribute name="created" value="emtwb3c7REVTS1RPUC1MQTcyVVZVOzIwMjMtMTEtMDk7MDk6MTY6MjkgQU07MjkzMA=="/>
+        <attribute name="edited" value="emtwb3c7REVTS1RPUC1MQTcyVVZVOzIwMjMtMTEtMDk7MTE6Mzk6MjEgQU07MTszMDI4"/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjQtMDEtMDM7IjAxOjExOjQzICI7MjA7Mjc0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeri" type="Real" array="True" size="5"/>
+            <assign variable="numeri[0]" expression="0"/>
+            <assign variable="numeri[1]" expression="0"/>
+            <assign variable="numeri[2]" expression="0"/>
+            <assign variable="numeri[3]" expression="0"/>
+            <assign variable="numeri[4]" expression="0"/>
+            <declare name="quadrato, i, k, fattoriale" type="Integer" array="False" size=""/>
+            <assign variable="fattoriale" expression="1"/>
+            <output expression="&quot;Inserisci 5 numeri di cui desideri sapere il fattoriale e il quadrato (un numero a messaggio)&quot;" newline="True"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <input variable="numeri[i]"/>
+            </for>
+            <output expression="&quot;I fattoriali dei numeri inseriti sono:&quot;" newline="True"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="fattoriale" expression="1"/>
+                <for variable="k" start="1" end="numeri[i]" direction="inc" step="1">
+                    <assign variable="fattoriale" expression="fattoriale * k"/>
+                </for>
+                <output expression="fattoriale" newline="True"/>
+            </for>
+            <output expression="&quot;I quadrati dei numeri inseriti sono: &quot;" newline="True"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="numeri[i]^2" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

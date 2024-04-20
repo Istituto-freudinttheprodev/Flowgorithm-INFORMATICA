@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-18 02:39:15 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjEwOjM3OjQyICI7MjU5Mg=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTItMTY7IjA5OjQ4OjM1ICI7MzttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMS0xMzsiMTI6MTQ6MTAgIjtFcy4gMzUgKGNpY2xvIGZvciBwZXIgaWwgY2FsY29sbyBkZWwgcXVhZHJhdG8gZGVpIG51bWVyaSBkaSB1bmEgbGlzdGEpLmZwcmc7MTIwNjA="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTItMTg7IjAyOjM5OjE1ICI7Mzc7Mjc2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, i2, divisore" type="Integer" array="False" size=""/>
+            <declare name="quadrato" type="Real" array="False" size=""/>
+            <declare name="numero" type="Real" array="False" size=""/>
+            <declare name="numerotrovato" type="Boolean" array="False" size=""/>
+            <assign variable="numerotrovato" expression="false"/>
+            <assign variable="divisore" expression="2"/>
+            <output expression="&quot;Inserisci il numero primo N da cui si desidera sapere il quadrato&quot;" newline="True"/>
+            <input variable="numero"/>
+            <while expression="divisore&lt;numero">
+                <if expression="numero%divisore==0">
+                    <then>
+                        <assign variable="numerotrovato" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="divisore" expression="divisore+1"/>
+            </while>
+            <if expression="numerotrovato==false">
+                <then>
+                    <output expression="&quot;Il numero scritto &#232; primo&quot;" newline="True"/>
+                    <output expression="&quot;Il quadrato di questo numero primo &#232;:&quot;" newline="True"/>
+                    <for variable="i" start="0" end="0" direction="inc" step="1">
+                        <assign variable="quadrato" expression="numero^2"/>
+                        <output expression="quadrato" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <output expression="&quot;Il numero scritto non &#232; primo&quot;" newline="True"/>
+                    <output expression="&quot;Riavvia il programma e inserisci un numero primo per sapere il suo quadrato&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

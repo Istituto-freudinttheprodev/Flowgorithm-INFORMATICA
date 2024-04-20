@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-27 01:55:25 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjEwOjA5OjQ3ICI7MjU5Ng=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMjc7IjAxOjU1OjI1ICI7NDE7Mjc2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2, numero3, minore, maggiore, medio" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero&quot;" newline="True"/>
+            <input variable="numero1"/>
+            <output expression="&quot;Inserisci il secondo numero&quot;" newline="True"/>
+            <input variable="numero2"/>
+            <output expression="&quot;Inserisci il terzo numero&quot;" newline="True"/>
+            <input variable="numero3"/>
+            <if expression="numero1&lt;=numero2 and numero1&lt;=numero3">
+                <then>
+                    <if expression="numero2&lt;=numero3">
+                        <then>
+                            <assign variable="minore" expression="numero1"/>
+                            <assign variable="medio" expression="numero2"/>
+                            <assign variable="maggiore" expression="numero3"/>
+                        </then>
+                        <else>
+                            <if expression="numero1&lt;=numero3">
+                                <then>
+                                    <assign variable="minore" expression="numero1"/>
+                                    <assign variable="medio" expression="numero3"/>
+                                    <assign variable="maggiore" expression="numero2"/>
+                                </then>
+                                <else>
+                                    <assign variable="minore" expression="numero3"/>
+                                    <assign variable="medio" expression="numero1"/>
+                                    <assign variable="maggiore" expression="numero2"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="numero2&lt;=numero1 and numero2&lt;=numero3">
+                        <then>
+                            <if expression="numero1&lt;=numero3">
+                                <then>
+                                    <assign variable="minore" expression="numero2"/>
+                                    <assign variable="medio" expression="numero1"/>
+                                    <assign variable="maggiore" expression="numero3"/>
+                                </then>
+                                <else>
+                                    <assign variable="minore" expression="numero2"/>
+                                    <assign variable="medio" expression="numero3"/>
+                                    <assign variable="maggiore" expression="numero1"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="numero1&lt;=numero2">
+                                <then>
+                                    <assign variable="minore" expression="numero3"/>
+                                    <assign variable="medio" expression="numero1"/>
+                                    <assign variable="maggiore" expression="numero2"/>
+                                </then>
+                                <else>
+                                    <assign variable="minore" expression="numero3"/>
+                                    <assign variable="medio" expression="numero2"/>
+                                    <assign variable="maggiore" expression="numero1"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="numero1==numero2 and numero2==numero3">
+                <then>
+                    <output expression="&quot;I tre numeri sono uguali&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;I numeri ordinati dal minore al maggiore sono:&quot;" newline="True"/>
+                    <output expression="minore" newline="True"/>
+                    <output expression="medio" newline="True"/>
+                    <output expression="maggiore" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-07 01:04:53 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjQtMDQtMDU7IjA3OjU2OjI3ICI7MjYwOA=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjQtMDQtMDU7IjA4OjE3OjIzICI7MTttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMS0wOTsiMTA6MDU6MjEgIjtFcy4gMzMgKGNpY2xvIGZvciBwZXIgaWwgY2FsY29sbyBkZWwgcXVhZHJhdG8gZGVpIG51bWVyaSBkaSB1bmEgbGlzdGEpLmZwcmc7MTIwNTM="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjQtMDQtMDY7IjAyOjQ1OjE4ICI7MTtidXJyaW47REVTS1RPUC03NDlEMklGOzIwMjEtMDEtMjE7MDk6MDU6MTIgQU07RXMuIDMyIChjaWNsbyBmb3IgcGVyIGlsIGNhbGNvbG8gZGVsbGUgdm9jYWxpIGluIHVuYSBmcmFzZSBvIHBhcm9sYSkuZnByZzsxMjE1MA=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjQtMDQtMDc7IjAxOjA0OjUzICI7MjA7Mjc1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lettera" type="String" array="False" size=""/>
+            <output expression="&quot;Inserisci la lettera di cui desideri sapere se &#232; vocale o meno (inserire solo una lettera alla volta)&quot;" newline="True"/>
+            <input variable="lettera"/>
+            <if expression="lettera == &quot;a&quot;">
+                <then>
+                    <output expression="&quot;La lettera inserita &#232; una vocale&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="lettera == &quot;e&quot;">
+                        <then>
+                            <output expression="&quot;La lettera inserita &#232; una vocale&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="lettera == &quot;i&quot;">
+                                <then>
+                                    <output expression="&quot;La lettera inserita &#232; una vocale&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="lettera == &quot;o&quot;">
+                                        <then>
+                                            <output expression="&quot;La lettera inserita &#232; una vocale&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="lettera == &quot;u&quot;">
+                                                <then>
+                                                    <output expression="&quot;La lettera inserita &#232; una vocale&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;La lettera inserita non &#232; una vocale, bens&#236; una consonante, un numero o un carattere speciale&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

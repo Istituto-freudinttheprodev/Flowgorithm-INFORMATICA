@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-10 07:01:48 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTItMDk7IjExOjA1OjU4ICI7MjYwMw=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTItMTA7IjA3OjAxOjQ4ICI7Mjg7Mjc2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, b, c, risultato, fibonacci, iteratore" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="c" expression="0"/>
+            <assign variable="risultato" expression="0"/>
+            <assign variable="fibonacci" expression="0"/>
+            <assign variable="iteratore" expression="0"/>
+            <output expression="&quot;Inserisci il numero di cui desideri calcolare l'n-esimo numero di Fibonacci&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n&lt;=0">
+                <then>
+                    <output expression="&quot;Impossibile eseguire il calcolo perch&#232; il numero deve essere maggiore di 0. Riavvia il programma per inserire un nuovo numero&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="n==1">
+                        <then>
+                            <assign variable="risultato" expression="0"/>
+                            <output expression="risultato" newline="True"/>
+                        </then>
+                        <else>
+                            <for variable="iteratore" start="fibonacci" end="n-2" direction="inc" step="1">
+                                <assign variable="c" expression="a+b"/>
+                                <assign variable="a" expression="b"/>
+                                <assign variable="b" expression="c"/>
+                                <assign variable="risultato" expression="c"/>
+                                <output expression="risultato" newline="True"/>
+                            </for>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

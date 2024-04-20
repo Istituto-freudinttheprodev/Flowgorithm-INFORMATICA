@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-24 08:43:55 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjQ7IjA4OjA3OjI5ICI7MjYwNA=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjQ7IjA4OjQzOjU1ICI7NjsyNzE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="addendo1" type="Integer" array="False" size=""/>
+            <declare name="addendo2" type="Integer" array="False" size=""/>
+            <declare name="sommaaddendi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero&quot;" newline="True"/>
+            <input variable="addendo1"/>
+            <output expression="&quot;Inserisci il secondo numero&quot;" newline="True"/>
+            <input variable="addendo2"/>
+            <assign variable="sommaaddendi" expression="addendo1+addendo2"/>
+            <output expression="&quot;Il risultato della somma &#232;:&quot;" newline="True"/>
+            <output expression="sommaaddendi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

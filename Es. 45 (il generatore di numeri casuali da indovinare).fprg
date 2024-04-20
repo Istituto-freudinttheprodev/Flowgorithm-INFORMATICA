@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-07 01:31:34 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTItMDk7IjExOjA1OjU4ICI7MjYwMw=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjQtMDQtMDc7IjAxOjMxOjM0ICI7Mjk7Mjc2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numerocasuale, numeroscritto" type="Integer" array="False" size=""/>
+            <assign variable="numeroscritto" expression="0"/>
+            <comment text="Il + 1 serve perch&#232; qualsiasi linguaggio di programmazione parte da 0 e allora cambierebbe il range perch&#232; non sarebbe pi&#249; da 1 a 100, ma da 0 a 100"/>
+            <assign variable="numerocasuale" expression="random(100)+1"/>
+            <comment text="Questa condizione serve perch&#232; se il numero casuale &#232; pari a 100 verrebbe ridotto di 1 e quindi non sarebbe 101, ma rimarebbe 100"/>
+            <if expression="numerocasuale == 101">
+                <then>
+                    <assign variable="numerocasuale" expression="numerocasuale - 1"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Prova ad indovinare un numero da 1 a 100, che la fortuna sia con te, inseriscilo qui sotto&quot;" newline="True"/>
+            <while expression="numeroscritto != numerocasuale">
+                <input variable="numeroscritto"/>
+                <if expression="numeroscritto=numerocasuale">
+                    <then>
+                        <output expression="&quot;Hai inserito il numero corretto, complimenti!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="numeroscritto&gt;numerocasuale">
+                            <then>
+                                <output expression="&quot;Hai inserito un numero troppo alto, riprova inserendone uno pi&#249; basso&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Hai inserito un numero troppo basso, riprova inserendone uno pi&#249; alto&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Sei riuscito a indovinare il numero perci&#242; sei il vincitore di questo gioco, complimenti davvero!&quot;" newline="True"/>
+            <output expression="&quot;Grazie per aver giocato&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

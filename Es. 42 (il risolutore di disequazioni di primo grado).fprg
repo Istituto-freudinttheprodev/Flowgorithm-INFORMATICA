@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-08 04:18:22 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMjc7IjAyOjM0OjE5ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTItMDg7IjA0OjE4OjIyICI7NjA7Mjc2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, x" type="Real" array="False" size=""/>
+            <declare name="risposta" type="String" array="False" size=""/>
+            <declare name="scelta" type="String" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore di a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Inserisci il valore di b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;I dati inseriti sono corretti? (rispondere solo con si o no)&quot;" newline="True"/>
+            <input variable="risposta"/>
+            <if expression="risposta==&quot;si&quot;">
+                <then>
+                    <if expression="a==0">
+                        <then>
+                            <output expression="&quot;La disequazione non &#232; di primo grado&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Passaggi per risolvere la disequazione: &quot;" newline="True"/>
+                            <output expression="&quot;1) Dividi entrambi i lati per a, ricordando di invertire il segno della disequazione, quindi la disequazione diventa:&quot;" newline="True"/>
+                            <output expression="&quot;ax + b&gt;0 diventa x&gt;x&quot;" newline="True"/>
+                            <output expression="&quot;2) La soluzione della disequazione quindi &#232;:&quot;" newline="True"/>
+                            <assign variable="x" expression="-b/a"/>
+                            <output expression="x" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="risposta==&quot;no&quot;">
+                        <then>
+                            <output expression="&quot;Riavviare il programma da capo per poter inserire nuovamente i dati, procedura di arresto in corso...&quot;" newline="True"/>
+                            <output expression="&quot;Grazie per avere usato questo programma!&quot;" newline="True"/>
+                            <breakpoint expression="" always="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Risposta non riconosciuta, riavviare il programma da capo per poter inserire nuovamente i dati, procedura di arresto in corso...&quot;" newline="True"/>
+                            <output expression="&quot;Grazie per avere usato questo programma!&quot;" newline="True"/>
+                            <breakpoint expression="" always="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Si desidera risolvere un'altra disequazione? (rispondere solo con si o no)&quot;" newline="True"/>
+            <input variable="scelta"/>
+            <if expression="scelta==&quot;si&quot;">
+                <then>
+                    <output expression="&quot;Riavviare il programma da capo per poter inserire nuovamente i dati, procedura di arresto in corso...&quot;" newline="True"/>
+                    <output expression="&quot;Grazie per avere usato questo programma!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="scelta==&quot;no&quot;">
+                        <then>
+                            <output expression="&quot;Grazie per avere usato questo programma! Il programma si chiuder&#224; automaticamente&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Risposta non riconosciuta, riavviare il programma da capo per poter inserire nuovamente i dati, procedura di arresto in corso...&quot;" newline="True"/>
+                            <output expression="&quot;Grazie per avere usato questo programma!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

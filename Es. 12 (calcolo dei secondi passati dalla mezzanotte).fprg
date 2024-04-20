@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 12:05:30 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjA5OjU5OjUzICI7MjYxMQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjEyOjAyOjI4ICI7MjttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNjsiMDk6Mzg6NTQgIjtFcy4gMTAgKGNhbGNvbG8gYXJlYSBlIGNpcmNvbmZlcmVuemEgZGVsIGNlcmNoaW8pLmZwcmc7MTAyMTI="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjEyOjA1OjMwICI7MTU7Mjc1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ora" type="Real" array="False" size=""/>
+            <declare name="minuti" type="Real" array="False" size=""/>
+            <declare name="secondi" type="Real" array="False" size=""/>
+            <declare name="secondipassatidallamezzanotte" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore dell'ora&quot;" newline="True"/>
+            <input variable="ora"/>
+            <output expression="&quot;Inserisci il valore dei minuti&quot;" newline="True"/>
+            <input variable="minuti"/>
+            <output expression="&quot;Inserisci il valore dei secondi&quot;" newline="True"/>
+            <input variable="secondi"/>
+            <assign variable="secondipassatidallamezzanotte" expression="ora*3600+minuti*60+secondi"/>
+            <output expression="&quot;Il valore dei secondi passati dalla mezzanotte &#232;:&quot;" newline="True"/>
+            <output expression="secondipassatidallamezzanotte" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

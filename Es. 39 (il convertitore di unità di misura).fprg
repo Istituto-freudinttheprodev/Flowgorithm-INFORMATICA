@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-23 10:17:27 "/>
+        <attribute name="created" value="Z2Ficmk7TEFQVE9QLUpTTExMRDNTOzIwMjMtMTEtMTU7MDI6Mjg6NDUgUE07Mjg5Mw=="/>
+        <attribute name="edited" value="Z2Ficmk7TEFQVE9QLUpTTExMRDNTOzIwMjMtMTEtMjI7MDk6MTA6MzIgUE07MzsyOTk1"/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMjM7IjEwOjE3OjI3ICI7MTY7Mjc1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="chili, libbre" type="Real" array="False" size=""/>
+            <declare name="piedi, metri" type="Real" array="False" size=""/>
+            <declare name="peso, lunghezza, numero, conversione" type="Real" array="False" size=""/>
+            <declare name="risposta, unita" type="String" array="False" size=""/>
+            <output expression="&quot;Scegli peso o lunghezza&quot;" newline="True"/>
+            <input variable="risposta"/>
+            <if expression="risposta==&quot;lunghezza&quot;">
+                <then>
+                    <output expression="&quot;Scegli se trasformare piedi o metri&quot;" newline="True"/>
+                    <input variable="unita"/>
+                    <if expression="unita==&quot;metri&quot;">
+                        <then>
+                            <output expression="&quot;Dammi un numero di metri da trasformare in piedi&quot;" newline="True"/>
+                            <input variable="numero"/>
+                            <assign variable="conversione" expression="numero*3.28084"/>
+                            <output expression="conversione" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Dammi un numero di piedi da trasformare in metri&quot;" newline="True"/>
+                            <input variable="numero"/>
+                            <assign variable="conversione" expression="numero/3.28084"/>
+                            <output expression="conversione" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="risposta==&quot;peso&quot;">
+                        <then>
+                            <output expression="&quot;Scegli se trasformare chili o libbre&quot;" newline="True"/>
+                            <input variable="unita"/>
+                            <if expression="unita==&quot;chili&quot;">
+                                <then>
+                                    <output expression="&quot;Dammi un numero di chili da trasformare in libbre&quot;" newline="True"/>
+                                    <input variable="numero"/>
+                                    <assign variable="conversione" expression="numero*2.20462"/>
+                                    <output expression="conversione" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Dammi un numero di libbre da trasformare in chili&quot;" newline="True"/>
+                                    <input variable="numero"/>
+                                    <assign variable="conversione" expression="numero/2.20462"/>
+                                    <output expression="conversione" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Scelta non valida, puoi scegliere solo tra peso o lunghezza&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

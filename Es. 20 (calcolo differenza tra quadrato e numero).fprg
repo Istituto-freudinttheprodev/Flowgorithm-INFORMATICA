@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-02 09:20:44 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjA5OjA0OjM2ICI7MjU5Nw=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjA5OjIwOjQ0ICI7NDsyNzA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Differenza, num" type="Real" array="False" size=""/>
+            <output expression="&quot;dammi un numero&quot;" newline="True"/>
+            <input variable="num"/>
+            <output expression="&quot;calcolo differenza fra il quadrato di un numero e il numero stesso&quot;" newline="True"/>
+            <assign variable="Differenza" expression="num^2- num"/>
+            <output expression="Differenza" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

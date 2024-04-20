@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 09:02:32 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjEwOjI4OjE0ICI7MjU5Ng=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjEwOjQ0OjQzICI7MjttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNDsiMDg6Mzc6MzYgIjtFcy4gNSAoY2FsY29sbyBwZXJpbWV0cm8gZGVsIHJldHRhbmdvbG8pLmZwcmc7OTU0MQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjA5OjAyOjMyICI7MzU7Mjc2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prezzolordo, prezzonetto, percentualeiva" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore del prezzo lordo&quot;" newline="True"/>
+            <input variable="prezzolordo"/>
+            <output expression="&quot;Inserisci il valore della percentuale dell'IVA&quot;" newline="True"/>
+            <input variable="percentualeiva"/>
+            <assign variable="prezzonetto" expression="prezzolordo/(1+percentualeiva/100)"/>
+            <comment text="Questo perch&#232; la formula &#232;:&#13;&#10;LORDO = NETTO + IVA% NETTO&#13;&#10;LORDO = NETTO (1+IVA che &#232; 0,19)&#13;&#10;NETTO = LORDO/1+IVA"/>
+            <output expression="&quot;Il valore del prezzo netto &#232;:&quot;" newline="True"/>
+            <output expression="prezzonetto" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

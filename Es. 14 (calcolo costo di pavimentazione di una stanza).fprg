@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 12:43:18 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjEwOjIzOjQ1ICI7MjU5NQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjEyOjIzOjMwICI7MjttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNjsiMDk6NTk6NTMgIjtFcy4gMTIgKGNhbGNvbG8gZGVpIHNlY29uZGkgcGFzc2F0aSBkYWxsYSBtZXp6YW5vdHRlKS5mcHJnOzEwNjk0"/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjEyOjQzOjE4ICI7MjM7Mjc2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="costounitario, larghezzastanza, lunghezzastanza, areastanza, costototale" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore del costo unitario, cio&#232; il costo di un singolo metro quadrato di pavimentazione&quot;" newline="True"/>
+            <input variable="costounitario"/>
+            <output expression="&quot;Inserisci il valore della larghezza della stanza in metri&quot;" newline="True"/>
+            <input variable="larghezzastanza"/>
+            <output expression="&quot;Inserisci il valore della lunghezza della stanza in metri&quot;" newline="True"/>
+            <input variable="lunghezzastanza"/>
+            <assign variable="areastanza" expression="larghezzastanza*lunghezzastanza"/>
+            <output expression="&quot;Il valore dell'area della stanza &#232;:&quot;" newline="True"/>
+            <output expression="areastanza" newline="True"/>
+            <assign variable="costototale" expression="costounitario*areastanza"/>
+            <output expression="&quot;Il valore del costo totale della stanza &#232;:&quot;" newline="True"/>
+            <output expression="costototale" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

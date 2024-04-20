@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 01:16:39 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMTM7IjEyOjI2OjQ0ICI7MjU5Ng=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMTM7IjEyOjI3OjUyICI7MTt6a3BvdztERVNLVE9QLUxBNzJVVlU7MjAyMy0xMS0wOTswOToxNjoyOSBBTTtFcy4gMzQgKGNpY2xvIGZvciBwZXIgaWwgY2FsY29sbyBkZWwgZmF0dG9yaWFsZSBlIGRlbCBxdWFkcmF0byBkZWkgbnVtZXJpIGRpIHVuYSBsaXN0YSkuZnByZzsxMzk2MA=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMTM7IjAxOjE2OjM5ICI7MjA7Mjc1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="prodotto" type="Real" array="False" size=""/>
+            <declare name="lista1, lista2, quadrati1, quadrati2, prodotti" type="Integer" array="True" size="3"/>
+            <output expression="&quot;Inserisci 3 elementi (numeri) per la lista n&#176;1 (un numero a messaggio)&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="lista1[i]"/>
+            </for>
+            <output expression="&quot;Inserisci 3 elementi (numeri) per la lista n&#176;2 (un numero a messaggio)&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="lista2[i]"/>
+            </for>
+            <output expression="&quot;Il calcolo dei quadrati tra gli elementi corrispondenti delle liste &#232;:&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <assign variable="quadrati1[i]" expression="lista1[i]^2"/>
+                <output expression="quadrati1[i]" newline="True"/>
+                <assign variable="quadrati2[i]" expression="lista2[i]^2"/>
+                <output expression="quadrati2[i]" newline="True"/>
+            </for>
+            <output expression="&quot;Il calcolo del prodotto dei quadrati tra gli elementi corrispondenti delle liste &#232;:&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <assign variable="prodotti[i]" expression="quadrati1[i]*quadrati2[i]"/>
+            </for>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <output expression="prodotti[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

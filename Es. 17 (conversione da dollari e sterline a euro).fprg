@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 09:27:35 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjc7IjA4OjMzOjQyICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjc7IjA4OjM1OjIzICI7MTttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNDsiMDg6Mzc6MzYgIjtFcy4gNSAoY2FsY29sbyBwZXJpbWV0cm8gZGVsIHJldHRhbmdvbG8pLmZwcmc7OTU0Ng=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjA4OjU4OjAzICI7MzttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNjsiMDk6NTk6NTMgIjtFcy4gMTIgKGNhbGNvbG8gZGVpIHNlY29uZGkgcGFzc2F0aSBkYWxsYSBtZXp6YW5vdHRlKS5mcHJnOzEwNzA4"/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjA5OjI3OjM1ICI7MjM7Mjc2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dollari, sterline, eurototali, dollariconversione, sterlineconversione, euroindollari, euroinsterline" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore numerico dei soldi in dollari&quot;" newline="True"/>
+            <input variable="dollari"/>
+            <output expression="&quot;Inserisci il valore numerico dei soldi in sterline&quot;" newline="True"/>
+            <input variable="sterline"/>
+            <assign variable="dollariconversione" expression="0.85"/>
+            <assign variable="sterlineconversione" expression="1.15"/>
+            <assign variable="euroindollari" expression="dollari*dollariconversione"/>
+            <assign variable="euroinsterline" expression="sterline*sterlineconversione"/>
+            <assign variable="eurototali" expression="euroindollari+euroinsterline"/>
+            <output expression="&quot;Il valore dei soldi in dollari in euro &#232;:&quot;" newline="True"/>
+            <output expression="euroindollari" newline="True"/>
+            <output expression="&quot;Il valore dei soldi in sterline in euro &#232;:&quot;" newline="True"/>
+            <output expression="euroinsterline" newline="True"/>
+            <output expression="&quot;Il valore della somma dei soldi di entrambe le valute in euro &#232;:&quot;" newline="True"/>
+            <output expression="eurototali" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

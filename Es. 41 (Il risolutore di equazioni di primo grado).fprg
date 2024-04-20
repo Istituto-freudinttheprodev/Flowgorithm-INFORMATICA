@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-30 10:23:57 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMjc7IjAyOjM0OjE5ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMzA7IjEwOjIzOjU3ICI7NDY7Mjc1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, x" type="Real" array="False" size=""/>
+            <declare name="risposta" type="String" array="False" size=""/>
+            <declare name="scelta" type="String" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore di a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Inserisci il valore di b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;I dati inseriti sono corretti? (rispondere solo con si o no)&quot;" newline="True"/>
+            <input variable="risposta"/>
+            <if expression="risposta==&quot;si&quot;">
+                <then>
+                    <if expression="a==0 and b==0">
+                        <then>
+                            <output expression="&quot;L'equazione &#232; indeterminata, infatti: 0x = 0&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a==0">
+                                <then>
+                                    <output expression="&quot;L'equazione &#232; impossibile, infatti: 0x = b&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Passaggi per risolvere l'equazione: &quot;" newline="True"/>
+                                    <output expression="&quot;1) Per prima cosa sottrai b da entrambi i lati dell'equazione&quot;" newline="True"/>
+                                    <output expression="&quot;2) Poi bisogna fare ax + b - b = 0 - b&quot;" newline="True"/>
+                                    <assign variable="x" expression="-b/a"/>
+                                    <output expression="&quot;4) Adesso bisogna dividere entrambi i lati per a&quot;" newline="True"/>
+                                    <output expression="&quot;5) Poi bisogna fare x = -b/a&quot;" newline="True"/>
+                                    <output expression="&quot;6) Adesso bisogna calcolare il valore di x&quot;" newline="True"/>
+                                    <output expression="&quot;7) Quindi alla fine il risultato &#232;:&quot;" newline="True"/>
+                                    <output expression="x" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="risposta==&quot;no&quot;">
+                        <then>
+                            <output expression="&quot;Riavviare il programma da capo per poter inserire nuovamente i dati, procedura di arresto in corso...&quot;" newline="True"/>
+                            <output expression="&quot;Grazie per avere usato questo programma!&quot;" newline="True"/>
+                            <breakpoint expression="" always="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Risposta non riconosciuta, riavviare il programma da capo per poter inserire nuovamente i dati, procedura di arresto in corso...&quot;" newline="True"/>
+                            <output expression="&quot;Grazie per avere usato questo programma!&quot;" newline="True"/>
+                            <breakpoint expression="" always="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Si desidera risolvere un'altra equazione? (rispondere solo con si o no)&quot;" newline="True"/>
+            <input variable="scelta"/>
+            <if expression="scelta==&quot;si&quot;">
+                <then>
+                    <output expression="&quot;Riavviare il programma da capo per poter inserire nuovamente i dati, procedura di arresto in corso...&quot;" newline="True"/>
+                    <output expression="&quot;Grazie per avere usato questo programma!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="scelta==&quot;no&quot;">
+                        <then>
+                            <output expression="&quot;Grazie per avere usato questo programma! Il programma si chiuder&#224; automaticamente&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Risposta non riconosciuta, riavviare il programma da capo per poter inserire nuovamente i dati, procedura di arresto in corso...&quot;" newline="True"/>
+                            <output expression="&quot;Grazie per avere usato questo programma!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

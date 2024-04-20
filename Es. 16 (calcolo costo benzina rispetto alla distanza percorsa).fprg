@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 01:20:39 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjc7IjA4OjExOjE0ICI7MjU5Ng=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjc7IjA4OjI3OjE2ICI7MjttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNDsiMDg6Mzc6MzYgIjtFcy4gNSAoY2FsY29sbyBwZXJpbWV0cm8gZGVsIHJldHRhbmdvbG8pLmZwcmc7OTU1MA=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjAxOjIwOjM5ICI7MTQ7Mjc1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="costobenzinaallitro" type="Real" array="False" size=""/>
+            <declare name="distanzaallitro" type="Real" array="False" size=""/>
+            <declare name="distanza" type="Real" array="False" size=""/>
+            <declare name="costototale" type="Real" array="False" size=""/>
+            <declare name="consumoallitro" type="Real" array="False" size=""/>
+            <declare name="consumo" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore del costo della benzina al litro&quot;" newline="True"/>
+            <input variable="costobenzinaallitro"/>
+            <output expression="&quot;Inserisci il valore del consumo al litro&quot;" newline="True"/>
+            <input variable="distanzaallitro"/>
+            <output expression="&quot;Inserisci il valore della distanza percorsa&quot;" newline="True"/>
+            <input variable="distanza"/>
+            <assign variable="consumo" expression="distanza/distanzaallitro"/>
+            <assign variable="costototale" expression="costobenzinaallitro * consumo"/>
+            <output expression="&quot;Il valore del costo del consumo in litri per coprire la distanza percorsa &#232;:&quot;" newline="True"/>
+            <output expression="costototale" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-25 01:40:05 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjQ7IjA4OjIzOjQ4ICI7MjYwMw=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjU7IjAxOjQwOjA1ICI7MjsyNjk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <declare name="doppio" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero di cui desideri sapere il doppio&quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="doppio" expression="numero*2"/>
+            <output expression="&quot;Il doppio del numero inserito &#232;:&quot;" newline="True"/>
+            <output expression="doppio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

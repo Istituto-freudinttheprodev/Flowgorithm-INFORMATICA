@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-02 10:09:41 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjA5OjQ4OjQ1ICI7MjYwNQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjEwOjA5OjQxICI7MjsyNjk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2" type="Real" array="False" size=""/>
+            <output expression="&quot;dammi numero 1&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;dammi numero 2&quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num1==num2^2">
+                <then>
+                    <output expression="&quot;numero 1 &#232; uguale numero 2 alla seconda&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="num2==num1^2">
+                        <then>
+                            <output expression="&quot;numero 2 &#232; uguale numero 1 alla seconda&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;nessuno dei due &#232; quadrato dell'altro&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

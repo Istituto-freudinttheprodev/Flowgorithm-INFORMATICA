@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zkpow"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-27 01:24:35 "/>
+        <attribute name="created" value="emtwb3c7REVTS1RPUC1MQTcyVVZVOzIwMjMtMTEtMDc7MDk6MDY6MzkgQU07MjkyOA=="/>
+        <attribute name="edited" value="emtwb3c7REVTS1RPUC1MQTcyVVZVOzIwMjMtMTEtMTQ7MDk6MzY6MTAgQU07MjszMDI3"/>
+        <attribute name="edited" value="ZSBzIHQgaCBlIHIg4piGO0xBUFRPUC05Q1YzVFZLUTsyMDIzLTExLTIzOyIwODozNToxMiAiOzI7MTI5NzA="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMjc7IjAxOjI0OjM1ICI7MTM7Mjc1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, somma, differenza, op" type="Real" array="False" size=""/>
+            <declare name="operazione" type="String" array="False" size=""/>
+            <output expression="&quot;Che operazione vuoi fare? (differenza/addizione): &quot;" newline="True"/>
+            <input variable="operazione"/>
+            <output expression="&quot;Inserisci il primo numero: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Inserisci il secondo numero: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="operazione == &quot;differenza&quot;">
+                <then>
+                    <assign variable="op" expression="num1 - num2"/>
+                    <output expression="&quot;Il risultato &#232;: &quot;" newline="True"/>
+                    <output expression="op" newline="True"/>
+                </then>
+                <else>
+                    <if expression="operazione == &quot;addizione&quot;">
+                        <then>
+                            <assign variable="op" expression="num1 + num2"/>
+                            <output expression="&quot;Il risultato &#232;: &quot;" newline="True"/>
+                            <output expression="op" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Scelta non valida. Puoi scegliere solo tra la differenza o l'addizione. Riprova riavviando il programma da capo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

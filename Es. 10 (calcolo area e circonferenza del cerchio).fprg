@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 12:13:41 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjA5OjM4OjU0ICI7MjYwOQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjA5OjQxOjI1ICI7MjttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNDsiMDg6Mzc6MzYgIjtFcy4gNSAoY2FsY29sbyBwZXJpbWV0cm8gcmV0dGFuZ29sbykuZnByZzs5MjA1"/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjEyOjEzOjQxICI7MjA7Mjc1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="raggio" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="circonferenza" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore del raggio&quot;" newline="True"/>
+            <input variable="raggio"/>
+            <assign variable="circonferenza" expression="raggio*2*3.14"/>
+            <assign variable="area" expression="3.14*raggio^2"/>
+            <output expression="&quot;Il valore della circonferenza &#232;:&quot;" newline="True"/>
+            <output expression="circonferenza" newline="True"/>
+            <output expression="&quot;Il valore dell'area &#232;:&quot;" newline="True"/>
+            <output expression="area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

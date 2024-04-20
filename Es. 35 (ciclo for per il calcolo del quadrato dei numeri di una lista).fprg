@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 01:10:06 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMTM7IjEyOjE0OjEwICI7MjU4Ng=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMTM7IjEyOjE4OjAxICI7NDt6a3BvdztERVNLVE9QLUxBNzJVVlU7MjAyMy0xMS0wOTswOToxNjoyOSBBTTtFcy4gMzQgKGNpY2xvIGZvciBwZXIgaWwgY2FsY29sbyBkZWwgZmF0dG9yaWFsZSBlIGRlbCBxdWFkcmF0byBkZWkgbnVtZXJpIGRpIHVuYSBsaXN0YSkuZnByZzsxMzk1Nw=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMTM7IjAxOjEwOjA2ICI7OTsyNzAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="quadrato" type="Real" array="False" size=""/>
+            <declare name="numeri" type="Real" array="True" size="3"/>
+            <output expression="&quot;Inserisci 3 numeri di cui desideri sapere il quadrato (un numero a messaggio)&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="numeri[i]"/>
+            </for>
+            <output expression="&quot;I quadrati dei numeri inseriti sono: &quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <assign variable="quadrato" expression="numeri[i]^2"/>
+                <output expression="quadrato" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

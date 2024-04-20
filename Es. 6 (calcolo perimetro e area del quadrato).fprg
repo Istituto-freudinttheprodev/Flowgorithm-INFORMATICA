@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-26 02:01:02 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjAxOjQ1OjQxICI7MjU5NQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjAxOjU0OjE5ICI7NDttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNDsiMDg6Mzc6MzYgIjtFcy4gNSAoY2FsY29sbyBwZXJpbWV0cm8gcmV0dGFuZ29sbykuZnByZzs5MjA2"/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjAyOjAxOjAyICI7MTI7Mjc0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lato" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="perimetro" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore del lato&quot;" newline="True"/>
+            <input variable="lato"/>
+            <output expression="&quot;Il valore del perimetro &#232;:&quot;" newline="True"/>
+            <assign variable="perimetro" expression="lato*4"/>
+            <output expression="perimetro" newline="True"/>
+            <assign variable="area" expression="lato*lato"/>
+            <output expression="&quot;Il valore dell'area &#232;:&quot;" newline="True"/>
+            <output expression="area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-26 10:19:22 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjEwOjA3OjU2ICI7MjU5OQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjEwOjEzOjEyICI7MzttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNDsiMDg6Mzc6MzYgIjtFcy4gNSAoY2FsY29sbyBwZXJpbWV0cm8gZGVsIHJldHRhbmdvbG8pLmZwcmc7OTUzNA=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjEwOjE5OjIyICI7MTA7Mjc1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="et&#224;1, et&#224;2, et&#224;3" type="Integer" array="False" size=""/>
+            <declare name="mediaet&#224;" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore delle tre et&#224; (un messaggio per ognuno)&quot;" newline="True"/>
+            <input variable="et&#224;1"/>
+            <input variable="et&#224;2"/>
+            <input variable="et&#224;3"/>
+            <assign variable="mediaet&#224;" expression="(et&#224;1+et&#224;2+et&#224;3)/3"/>
+            <output expression="&quot;Il valore della media della et&#224; &#232;:&quot;" newline="True"/>
+            <output expression="mediaet&#224;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

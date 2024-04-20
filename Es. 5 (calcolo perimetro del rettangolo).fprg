@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-26 01:44:02 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjQ7IjA4OjM3OjM2ICI7MjYwNQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjAxOjQ0OjAyICI7MTg7Mjc1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="altezza" type="Real" array="False" size=""/>
+            <declare name="base" type="Real" array="False" size=""/>
+            <declare name="perimetro" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore della base&quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;Inserisci il valore dell'altezza&quot;" newline="True"/>
+            <input variable="altezza"/>
+            <output expression="&quot;Il valore del perimetro &#232;:&quot;" newline="True"/>
+            <assign variable="perimetro" expression="(base+altezza)*2"/>
+            <output expression="perimetro" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

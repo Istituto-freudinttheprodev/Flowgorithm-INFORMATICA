@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 10:13:24 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjA5OjUwOjU5ICI7MjYwOA=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjExOjQwOjUyICI7MjttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNjsiMDk6Mzg6NTQgIjtFcy4gMTAgKGNhbGNvbG8gYXJlYSBlIGNpcmNvbmZlcmVuemEgZGVsIGNlcmNoaW8pLmZwcmc7MTAyMTA="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjEwOjEzOjI0ICI7MTg7Mjc1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z, quadrato" type="Real" array="False" size=""/>
+            <declare name="risultato" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore di x&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Inserisci il valore di y&quot;" newline="True"/>
+            <input variable="y"/>
+            <output expression="&quot;Inserisci il valore di z&quot;" newline="True"/>
+            <input variable="z"/>
+            <assign variable="quadrato" expression="2"/>
+            <assign variable="risultato" expression="(x+y+z)^quadrato"/>
+            <output expression="&quot;Il valore del risultato del calcolo &#232;:&quot;" newline="True"/>
+            <output expression="risultato" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

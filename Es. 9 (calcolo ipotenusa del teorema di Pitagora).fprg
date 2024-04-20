@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-26 09:37:39 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjA5OjI4OjMwICI7MjYwMg=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjA5OjMzOjA5ICI7MjttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNDsiMDg6Mzc6MzYgIjtFcy4gNSAoY2FsY29sbyBwZXJpbWV0cm8gcmV0dGFuZ29sbykuZnByZzs5MjA4"/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjY7IjA5OjM3OjM5ICI7MTsyNzE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cateto1" type="Real" array="False" size=""/>
+            <declare name="cateto2" type="Real" array="False" size=""/>
+            <declare name="ipotenusa" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore del primo cateto&quot;" newline="True"/>
+            <input variable="cateto1"/>
+            <output expression="&quot;Inserisci il valore del secondo cateto&quot;" newline="True"/>
+            <input variable="cateto2"/>
+            <output expression="&quot;Il valore dell'ipotenusa &#232;:&quot;" newline="True"/>
+            <assign variable="ipotenusa" expression="sqrt(cateto1^2+cateto2^2)"/>
+            <output expression="ipotenusa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

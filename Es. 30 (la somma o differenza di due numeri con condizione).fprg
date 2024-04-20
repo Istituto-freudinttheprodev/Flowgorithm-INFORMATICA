@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-17 09:37:01 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDc7IjA5OjExOjUxICI7MjU5Nw=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTItMTc7IjA5OjM3OjAxICI7MTQ7Mjc2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, risultato" type="Real" array="False" size=""/>
+            <declare name="scelta, somma, differenza" type="String" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Inserisci il secondo numero: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <output expression="&quot;Scegli una delle due opzioni per l'azione che si desidera fare: somma o differenza&quot;" newline="True"/>
+            <input variable="scelta"/>
+            <if expression="scelta=&quot;somma&quot;">
+                <then>
+                    <output expression="&quot;Il risultato della operazione &#232;:&quot;" newline="True"/>
+                    <assign variable="risultato" expression="num1+num2"/>
+                    <output expression="risultato" newline="True"/>
+                </then>
+                <else>
+                    <if expression="scelta=&quot;differenza&quot;">
+                        <then>
+                            <output expression="&quot;Il risultato della operazione &#232;:&quot;" newline="True"/>
+                            <assign variable="risultato" expression="num1-num2"/>
+                            <output expression="risultato" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Scelta invalida. Riprova riavviando il programma da capo. Puoi scegliere soltanto tra somma e differenza&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

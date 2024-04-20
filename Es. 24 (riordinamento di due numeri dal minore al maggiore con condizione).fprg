@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 12:10:32 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjEwOjA5OjQ3ICI7MjU5Ng=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMTM7IjEyOjEwOjMyICI7MjU7Mjc0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero&quot;" newline="True"/>
+            <input variable="numero1"/>
+            <output expression="&quot;Inserisci il secondo numero&quot;" newline="True"/>
+            <input variable="numero2"/>
+            <if expression="numero1&gt;numero2">
+                <then>
+                    <output expression="&quot;I numeri ordinati dal minore al maggiore sono:&quot;" newline="True"/>
+                    <output expression="numero2" newline="True"/>
+                    <output expression="numero1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numero2&gt;numero1">
+                        <then>
+                            <output expression="&quot;I numeri ordinati dal minore al maggiore sono:&quot;" newline="True"/>
+                            <output expression="numero1" newline="True"/>
+                            <output expression="numero2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;I due numeri sono uguali&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

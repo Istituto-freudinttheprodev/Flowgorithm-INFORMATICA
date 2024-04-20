@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-06 02:24:23 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjEwOjM3OjQyICI7MjU5Mg=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDY7IjAyOjI0OjIzICI7MTc7Mjc1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+            <declare name="N, i, quadrato" type="Real" array="False" size=""/>
+            <input variable="N"/>
+            <output expression="&quot;Il quadrato di tutti i numeri &#232;:&quot;" newline="True"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <assign variable="quadrato" expression="i^2"/>
+                <output expression="quadrato" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

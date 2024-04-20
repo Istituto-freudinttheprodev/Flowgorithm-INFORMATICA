@@ -1,0 +1,7 @@
+﻿print("Inserisci il valore del primo cateto")
+cateto1 = float(input())
+print("Inserisci il valore del secondo cateto")
+cateto2 = float(input())
+print("Il valore dell'ipotenusa è:")
+ipotenusa = sqrt(cateto1 ** 2 + cateto2 ** 2)
+print(ipotenusa)

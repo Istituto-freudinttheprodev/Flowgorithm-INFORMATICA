@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-02 09:32:23 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjA5OjIwOjUxICI7MjU5Mg=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjA5OjMyOjIzICI7MTsyNzAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2" type="Real" array="False" size=""/>
+            <output expression="&quot;dammi num1&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;dammi num2&quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num1==num2">
+                <then>
+                    <output expression="&quot;num1 &#233; uguale a num2&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;num1 non &#233; uguale a num2&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

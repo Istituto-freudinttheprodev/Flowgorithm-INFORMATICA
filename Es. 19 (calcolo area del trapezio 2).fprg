@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 10:45:27 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjc7IjA4OjUxOjUxICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjc7IjA4OjUzOjIzICI7MjttYXR0ZTtIUEFNRE1BVFRFTzI7MjAyMy0xMC0yNDsiMDg6Mzc6MzYgIjtFcy4gNSAoY2FsY29sbyBwZXJpbWV0cm8gZGVsIHJldHRhbmdvbG8pLmZwcmc7OTU0Nw=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTAtMjg7IjEwOjQ1OjI3ICI7MzA7Mjc1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="baseminore, basemaggiore, altezza, area" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore della base minore&quot;" newline="True"/>
+            <input variable="baseminore"/>
+            <output expression="&quot;Il valore della base maggiore &#232;:&quot;" newline="True"/>
+            <assign variable="basemaggiore" expression="3*baseminore"/>
+            <output expression="basemaggiore" newline="True"/>
+            <output expression="&quot;Il valore dell'altezza &#232;:&quot;" newline="True"/>
+            <assign variable="altezza" expression="2*baseminore"/>
+            <output expression="altezza" newline="True"/>
+            <output expression="&quot;Il valore dell'area &#232;:&quot;" newline="True"/>
+            <assign variable="area" expression="(basemaggiore+baseminore)*altezza/2"/>
+            <output expression="area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

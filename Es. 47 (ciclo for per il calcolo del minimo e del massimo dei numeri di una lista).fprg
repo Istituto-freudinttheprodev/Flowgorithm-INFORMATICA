@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-04 01:19:53 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMTM7IjEyOjE0OjEwICI7MjU4Ng=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMTM7IjEyOjE4OjAxICI7NDt6a3BvdztERVNLVE9QLUxBNzJVVlU7MjAyMy0xMS0wOTswOToxNjoyOSBBTTtFcy4gMzQgKGNpY2xvIGZvciBwZXIgaWwgY2FsY29sbyBkZWwgZmF0dG9yaWFsZSBlIGRlbCBxdWFkcmF0byBkZWkgbnVtZXJpIGRpIHVuYSBsaXN0YSkuZnByZzsxMzk1Nw=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjQtMDEtMDQ7IjAxOjE5OjUzICI7NTA7Mjc1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numerodellalista, minimo, massimo, i" type="Real" array="False" size=""/>
+            <declare name="listadinumeri" type="Integer" array="False" size=""/>
+            <assign variable="minimo" expression="0"/>
+            <assign variable="massimo" expression="0"/>
+            <output expression="&quot;Quanti numeri desideri inserire nella lista?&quot;" newline="True"/>
+            <input variable="listadinumeri"/>
+            <assign variable="listadinumeri" expression="listadinumeri-1"/>
+            <for variable="i" start="0" end="listadinumeri" direction="inc" step="1">
+                <output expression="&quot;Inserisci un numero della lista&quot;" newline="True"/>
+                <input variable="numerodellalista"/>
+                <if expression="i==0">
+                    <then>
+                        <assign variable="minimo" expression="numerodellalista"/>
+                        <assign variable="massimo" expression="numerodellalista"/>
+                    </then>
+                    <else>
+                        <if expression="numerodellalista&gt;massimo">
+                            <then>
+                                <assign variable="massimo" expression="numerodellalista"/>
+                            </then>
+                            <else>
+                                <if expression="numerodellalista&lt;minimo">
+                                    <then>
+                                        <assign variable="minimo" expression="numerodellalista"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Il numero massimo della lista &#232;:&quot;" newline="True"/>
+            <output expression="massimo" newline="True"/>
+            <output expression="&quot;Il numero minimo della lista &#232;:&quot;" newline="True"/>
+            <output expression="minimo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

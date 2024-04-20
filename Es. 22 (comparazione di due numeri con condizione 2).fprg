@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="matte"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-02 09:48:20 "/>
+        <attribute name="created" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjA5OjMyOjM4ICI7MjYwMA=="/>
+        <attribute name="edited" value="bWF0dGU7SFBBTURNQVRURU8yOzIwMjMtMTEtMDI7IjA5OjQ4OjIwICI7MTsyNzA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2" type="Real" array="False" size=""/>
+            <output expression="&quot;dammi numero num1&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;dammi numero num2&quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num1&gt;num2">
+                <then>
+                    <output expression="&quot;num1 e maggiore di num2&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="num2&gt;num1">
+                        <then>
+                            <output expression="&quot;num1 e minore di num2&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;il num1 e uguale di num2&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
